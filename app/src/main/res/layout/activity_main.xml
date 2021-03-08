@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="@dimen/padding_all"
     tools:context=".MainActivity">
 
     <TextView
@@ -15,12 +16,42 @@
         android:text="@string/name"
         android:textAlignment="center" />
 
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_marginTop"
+        android:fontFamily="@font/roboto"
+        android:text="@string/done"
+        app:backgroundTint="@color/purple_200" />
+
+    <TextView
+        android:id="@+id/nickname_text"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" />
+
     <ImageView
         android:id="@+id/star_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/view_marginTop"
         android:contentDescription="@string/yellow_star"
+        android:paddingBottom="@dimen/padding_bottom"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <ScrollView
@@ -34,7 +65,7 @@
             style="@style/NameStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/padding_all"
+            android:lineSpacingMultiplier="1.2"
             android:text="@string/bio" />
     </ScrollView>
 </LinearLayout>
