@@ -3,4 +3,5 @@
     <dimen name="text_size_main_activity">20sp</dimen>
     <dimen name="view_marginTop">16dp</dimen>
     <dimen name="view_paddingTop">8dp</dimen>
+    <dimen name="padding_all">8dp</dimen>
 </resources>
